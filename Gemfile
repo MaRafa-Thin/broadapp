@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'bootstrap-sass'
 gem 'simple_form'
+gem 'devise'
 
 
 # Use Active Storage variant
