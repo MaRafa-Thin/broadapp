@@ -1,7 +1,15 @@
-<h2><%= @play.title %></h2>
-<h3><%= @play.director %></h3>
-<h4><%= @play.category.name %></h4>
-<p><%= @play.description %></p>
+<div class="row">
+  <div class="col-md-4">
+    <%= image_tag @play.play_img.url(:play_index), class: "play-show" %>
+  </div>
+  
+  <div class="col-md-8">
+      <h2 class="play-title"><%= @play.title %></h2>
+      <h3 class="play-director"><span>By </span><%= @play.director %></h3>
+      <h4 class="play-director"><%= @play.category.name %></h4>
+      <p class="play-desc"><%= @play.description %></p>
+  </div>
+</div>
 
 <div class="links btn-group">
   <%= link_to "Back", root_path, class: "btn btn-info" %>
