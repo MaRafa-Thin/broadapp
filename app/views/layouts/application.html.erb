@@ -4,9 +4,14 @@
     <title>Broadway</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'jquery-raty', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
